@@ -1,0 +1,112 @@
+.header {
+	height: 70px;
+	display: flex;
+	background-color: #00453e;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+.header__logo {
+	width: 100px;
+	object-fit: contain;
+	margin: 0 20px;
+	margin-top: 18px;
+}
+.header__searchIcon {
+	display: flex;
+	padding: 5px;
+	height: 22px !important;
+	background-color: #cd9842;
+	text-decoration: non;
+}
+.header__dropDownIcon {
+	display: flex;
+	padding: 5px;
+	height: 22px !important;
+	background-color: #cd98;
+	text-decoration: non;
+}
+.icon {
+	padding-top: 5px;
+}
+.header__search {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	border-radius: 24px;
+
+	height: 40px;
+	margin-top: 10px;
+}
+.header__searchInput {
+	height: 11px;
+	padding: 10px;
+	border: none;
+	width: 95%;
+}
+.header__option {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: white;
+}
+.header__nav {
+	padding-top: 10px;
+	display: flex;
+	justify-content: space-evenly;
+	margin-right: 5px;
+}
+.header__optionLineOne {
+	font-size: 13px;
+	color: white;
+	text-decoration: none;
+}
+.header__optionLineTwo {
+	font-size: 13px;
+	font-weight: 800;
+	color: white;
+	text-decoration: none;
+}
+.header__optionLineOneList {
+	color: #cd98;
+}
+.header__optionBasket {
+	display: inline-flex;
+	align-items: center;
+	color: white;
+}
+.header__basketCount {
+	padding-top: 15px;
+	margin-left: 8px;
+	margin-right: 13px;
+	color: white;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+.header__clearLink {
+	text-decoration: none;
+}
+.image {
+	max-height: 25px;
+	width: 25px;
+	margin-right: 3px;
+}
+.header__language {
+	align-items: left;
+	margin-left: 10px;
+	padding-top: 15px;
+	display: flex;
+	justify-content: space-evenly;
+	margin-right: 25px;
+}
+.header__language a {
+	color: white;
+	text-decoration: none;
+	padding-top: 5px;
+}
+.arrow {
+	padding-top: 8px;
+	margin-left: 3px;
+	color: white;
+}

@@ -1,0 +1,9 @@
+.subtotal{
+    background-color: #e3e6e6;
+}
+.subtotal__button{
+    background-color: #f7ca00;
+    border-radius: 4px;
+    padding: 7px;
+    border: none;
+}

@@ -1,0 +1,36 @@
+.sorder {
+	width: 900px;
+	margin-top: 10px;
+	background-color: white;
+	margin-left: auto;
+	text-align: left;
+	margin-bottom: 20px;
+	margin-right: auto;
+    /* height: 600px; */
+}
+.order__text {
+	display: flex;
+	justify-content: space-around;
+}
+.order__datewrapper {
+	padding-left: 5px;
+	margin-top: 40px;
+}
+.order__id {
+	padding-right: 10px;
+	padding-top: 20px;
+
+	margin-left: 0;
+}
+
+.order__producwrapper {
+	padding-top: 10px;
+	width: 580px;
+	margin-bottom: 5px;
+}
+.order__total{
+    padding: 10px;
+    text-align: right;
+    padding-right: 150px;
+    padding-bottom: 40px;
+}
