@@ -28,12 +28,12 @@ function Orders() {
 	useEffect(() => {
 		fetchData();
 	}, [user]);
-	console.log(orders);
+	// console.log(orders);
 	return (
 		<div className="orders">
 			<h1> your Orders</h1>
 			{orders.map((order) => (
-				<SingleOrder order={order} />
+				<SingleOrder key={order.orderId} order={order} />
 			))}
             <br />
 		</div>

@@ -6,7 +6,7 @@ import CurrencyFormat from "react-currency-format";
 
 function SingleOrder({ order }) {
 	let cart = order.cart;
-	console.log(cart);
+	// console.log(cart);
 	return (
 		<div className="sorder">
 			<div className="order__text">
@@ -25,12 +25,13 @@ function SingleOrder({ order }) {
 			<div className="order__producwrapper">
 				{cart?.map((element) => (
 					<CheckoutProduct
+						key={element.id}
 						id={element.id}
 						title={element.title}
 						image={element.image}
 						price={element.price}
 						quantity={element.quantity}
-                        button 
+						button
 					/>
 				))}
 			</div>

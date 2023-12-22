@@ -22,9 +22,9 @@ function Payment() {
 
 	const cartTotal = (cart) =>
 		cart?.reduce((amount, item) => amount + item.price * item.quantity, 0);
-		const getQuantity = (cart) => {
-			return cart?.reduce((qty, item) => qty + item.quantity, 0);
-		};
+	const getQuantity = (cart) => {
+		return cart?.reduce((qty, item) => qty + item.quantity, 0);
+	};
 
 	const handleSubmit = async (event) => {
 		event.preventDefault();
@@ -77,10 +77,11 @@ function Payment() {
 		<div className="payment">
 			<br />
 			<div className="payment__warapper">
-				<h2 className=""> checkout
+				<h2 className="">
+					{" "}
+					checkout
 					<Link to="">
-						({getQuantity(cart)}{" "}
-						{getQuantity(cart) === 1 ? "item" : "items"}):{" "}
+						({getQuantity(cart)} {getQuantity(cart) === 1 ? "item" : "items"}):{" "}
 					</Link>
 				</h2>
 			</div>
@@ -103,6 +104,7 @@ function Payment() {
 					<div className="payment__reviewItem">
 						{cart.map((item) => (
 							<CheckoutProduct
+								key={item.id}
 								id={item.id}
 								title={item.title}
 								image={item.image}
