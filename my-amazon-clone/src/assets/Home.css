@@ -1,9 +1,10 @@
 .home__image {
 	width: 100%;
 	z-index: -1;
-	margin-bottom: -280px;
+	margin-bottom: -240px;
 	mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
+
 .home__row {
 	background-color: #e3e6e6;
 	display: flex;
@@ -15,6 +16,6 @@
 .home {
 	background-color: #e3e6e6;
 }
-.home__slide{
+.home__slide {
 	display: flex;
 }
