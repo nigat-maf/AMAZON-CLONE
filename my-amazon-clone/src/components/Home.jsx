@@ -1,23 +1,16 @@
 import React from "react";
 import "../assets/Home.css";
+import img from "../assets/img/lastbanner.jpg";
 import Products from "./Products";
 
 function Home() {
 	return (
 		<>
 			<div className="home">
-				{/* <img
-					className="home__image"
-					src="https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71A3yQHkmWL._SX3000_.jpg"
-					alt="img-2"
-				/> */}
-				<div className="banner">
-					<img
-						className="home__image"
-						src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1000' height='200'%3E%3Crect x='0' y='0' width='1000' height='200' fill='%23C6F7D0' rx='10'/%3E%3C/svg%3E"
-						alt="Light Green Banner"
-					/>
-				</div>
+				<img className="home__image" src={img} alt="img-2" />
+				{/* <div className="banner">
+					<img className="home__image" src={img} alt="img-2" />
+				</div> */}
 
 				<div className="home__row">
 					<Products
@@ -71,14 +64,14 @@ function Home() {
 				<br />
 				<br />
 
-				<Products
+				{/* <Products
 					id="7"
 					special
 					className="product__bigimage"
 					image="https://m.media-amazon.com/images/G/01/GiftCards/Consumer/multi-product/House/2022_fallback_HouseAds_1940x500_EN.jpg"
 				/>
 				<br />
-				<br />
+				<br /> */}
 			</div>
 		</>
 	);
